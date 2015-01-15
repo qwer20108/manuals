@@ -1,217 +1,313 @@
-****************
-創建一個 HTML 組件
-****************
+.. _Working with HTML Components:
 
+<<<<<<< HEAD
+=======
     .. image:: Images/C07_01.png
+>>>>>>> 529851508041f3ac8bbe1c63416923240662ea04
 
-HTML 組件是最基本的組件類型，可用於建造以文字為主的課程。
-諸如文字、清單、聯結、圖片等資訊到單元中。 
-例如，您可以在問題組件中使用這些組件來增加解釋文字，您也可使用 HTML 組件來匯入 LaTeX 原始碼到您的課程。
+#############################
+使用 HTML 組件
+#############################
 
-HTML 組件編輯器有兩種顯示模式: **視覺檢視** 以及 **HTML 檢視**
-「視覺檢視」提供“所見即所得” (WYSIWYG) 編輯器用以編輯已預先格式化版本的文字。
-「HTML 檢視」讓您可以直接編輯 HTML 原始碼。
+***********************
+前言
+***********************
 
-.. note::
+HTML 組件是建構課程的基本要素，利用 HTML 組件新增與格式化文字、連結、圖片等。
 
-  當 HTML 原始碼被儲存時，Studio 將在渲染前先行處理結果。 
-  在「視覺檢視」及「HTML 檢視」之間切換以確您創建的組件看起來與您預期的一樣。
+請見以下主題內容，取得更多資訊：
 
-.. raw:: latex
-  
-      \newpage %
+* :ref:`The User Interface`
+* :ref:`Create an HTML Component`
+* :ref:`Add a Link in an HTML Component`
+* :ref:`Add an Image to an HTML Component`
+* :ref:`Import LaTeX Code`
 
-創建一個基本 HTML 組件
-********************
+.. note:: Review :ref:`Organizing Your Course Content` and :ref:`Best Practices for HTML Markup` before you start working with HTML components.
 
-**創建一個基本、空白的HTML組件**
+.. _The User Interface:
 
-1. 在新增新組件下，點擊 **HTML** 接著點擊 **空白** ，會出現下方的空白組件。
+*****************************************
+使用者介面
+*****************************************
 
+<<<<<<< HEAD
+使用 HTML 組件編輯器新增 HTML 組件，編輯器提供兩種觀看模式： **視覺模式**
+與  **HTML 模式** 。點下編輯器右上角的按鍵，可互換兩種模式。
+=======
 .. image:: Images/C07_02.png
+>>>>>>> 529851508041f3ac8bbe1c63416923240662ea04
 
-2. 在空白組件中，點擊 **編輯** 開啟 HTML 編輯器。
+.. image:: Images/HTMLEditorTabs.gif
 
+<<<<<<< HEAD
+-  **視覺模式** 提供「所見即所得」功能，使用編輯器上方的格式化功能時，能夠
+立即看見結果。每次開啟 HTML 組件，系統預設採用視覺模式。
+=======
 .. image:: Images/C07_03.png
+>>>>>>> 529851508041f3ac8bbe1c63416923240662ea04
 
-3. 輸入您要的資訊，接著點擊 **儲存** 。
+  以下清單是視覺模式提供的格式化功能。
 
-.. note::
+  .. image:: Images/HTML_VisualView_Toolbar.gif
 
-  若您想要加入到其它頁面或圖片的連結或或是要直接編輯 HTML，請切換到 HTML 分頁。
+  #. 選擇樣式，如：標題 1、標題 2 或段落。
+  #. 文字粗體
+  #. 文字斜體
+  #. 文字加底線
+  #. 新增項目符號清單
+  #. 新增編號清單
+  #. 減少縮排
+  #. 縮排
+  #. 引號
+  #. 字型（如：使用 Courier 字體）
+  #. 新增連結
+  #. 刪除現有的連結
 
-.. raw:: latex
-  
-      \newpage %
+ 視覺模式透過學習管理平台顯示內容，請見下圖範例。 
 
-**創建一個包含樣式的基本 HTML 組件**
+  .. image:: Images/HTMLComponent_VisualView_LMS.gif
 
-1. 在 **新增組件** 下方點擊 **HTML** 接著點擊 **公告** ，出現下列畫面。
+- **HTML 模式** 允許使用者直接用 HTML 語法編輯內容。
 
+<<<<<<< HEAD
+  .. image:: Images/HTML_HTMLView.gif
+=======
 .. image:: Images/C07_04.png
+>>>>>>> 529851508041f3ac8bbe1c63416923240662ea04
 
-2. 點擊 **編輯** 。
+  .. note:: 使用 HTML模式時，建議切換到視覺模式確認編輯成果，特別在新增圖片或
+新增連結時，可以做雙重確認。 
 
-  在「視覺檢視」裡開啟文字編輯器。 用您要發表的文字取代樣式裡的文字。
+.. _Create an HTML Component:
 
-.. note::
+*****************************
+新增 HTML 組件
+*****************************
 
-  若您想要加入到其它頁面或圖片的連結或或是要直接編輯 HTML，請切換到 HTML 分頁。
+新增 HTML 組件的步驟：
 
+<<<<<<< HEAD
+1. 在 **新增組件**，點下 **html**。
+=======
 .. image:: Images/C07_05.png
+>>>>>>> 529851508041f3ac8bbe1c63416923240662ea04
 
-3. 點擊 **儲存** 。
+  .. image:: Images/NewComponent_HTML.gif
 
-.. raw:: latex
-  
-    \newpage %
+2. 出現清單，點下 **文字**。
+在畫面下方出現空白組件。
 
-創建連結
-*******
+  .. image:: Images/HTMLComponent_Edit.gif
 
-連結到講義或圖片
-==========================
+3. 點下 **編輯**。請見上圖範例。
+開啟 HTML 組件編輯器，同時進入視覺模式。
 
-要連結到一個文件、圖片或您上傳到 **檔案及上傳頁面** 的其他檔案：
+  .. image:: Images/HTMLEditor.gif
 
-1. 創建一個空白的 HTML 組件，切換到 HTML 檢視。
+4. 在視覺模式或 HTML 模式，輸入文字與使用格式化功能。
 
-2. 在 HTML 對話框，創建連到您的檔案的連結。
+5. 輸入名稱（希望給學生看到的名稱）。點下編輯器右上角的 **設定**，在 **顯示名
+稱** 欄位輸入文字。
 
-要創建連到文件的連結，請輸入以下句法， **URL OF FILE** 是您上傳檔案到 **檔案及上傳** 頁面的步驟5記下的 URL， **LINK TEXT** 是使用者所看到可以按下的文字連結要顯示的文字。 ::
+   點下右上角的 **編輯**，回到原本的編輯模式。 
 
-	<p><a href="[URL OF FILE]">[LINK TEXT]</a></p>
+6. 點下 **儲存**。
 
-例如，要創建連結連到 “About” 頁面的 HTML 樣式的文件，其 URL 是
-/c4x/edX/edX101/asset/AboutPage_Template.txt, 
-則請輸入以下的原始碼： ::
+在 HTML 組件內，可以新增連結與圖片，或是匯入 LaTex 程式碼。取得更多資
+訊，請見：
 
-  <p><a href="/c4x/edX/edX101/asset/AboutPage_Template.txt">HTML Template for
-  <the "About" page</a></p>
+* :ref:`Add a Link in an HTML Component`
+* :ref:`Add an Image to an HTML Component`
+* :ref:`Import LaTeX Code`
 
-要創建連到您已上傳的圖片的連結，請輸入以下句法， **URL OF FILE** 是您上傳檔案到 **檔案及上傳** 頁面的步驟5記下的 URL， **LINK TEXT** 是使用者所看到可以按下的文字連結要顯示的文字。 ::
+.. _Add a Link in an HTML Component:
 
-  <p><img src="[URL OF FILE]"/></p>
+***********************************
+在 HTML 組件增加連結
+***********************************
 
-例如，當您要建立一個連結連到 CourseImage.jpg，您記下的 URL 為
-/c4x/edX/edX101/asset/CourseImage.jpg
-則請輸入以下的原始碼： ::
+在 HTML 組件增加網站連結、課程單元連結、或是檔案，必須使用 **輸入／編輯
+連結** 的對話框。
 
-	<p><img src="/c4x/edX/edX101/asset/CourseImage.jpg"></p>
+.. image:: Images/HTML_Insert-EditLink_DBox.gif
 
-當您使用此原始碼，將會出現下方圖片中範例。
+For more information, see:
 
-.. image:: Images/image078.png
-  :width: 800
+* :ref:`Add a Link to a Website`
+* :ref:`Add a Link to a Course Unit`
+* :ref:`Add a Link to a File`
 
-3. 點擊 **儲存** ，您的檔案或圖片將出現在組件中。
+.. _Add a Link to a Website:
 
+============================
+增加網址
+============================
 
-.. raw:: latex
-  
-  \newpage %
-  
+操作步驟：
 
-連結到課程單元
-============
+#. 選擇要成為連結的文字。
 
-要引導學生到您課程中的特定位置，您必須要增加一個HTML連結到特定單元，請參考下列步驟：
+#. 點下工具列的連結圖示。
 
-1. 確定您課程的相對目錄。
+#.  **輸入／編輯連結** 的對話框會被開啟，在 **連線網址** 欄位，輸入要連線的網址。
 
-a. 在課程設定分頁，點擊在基本資訊下方的藍色您的課程 URL 連結。
+   .. image:: Images/HTML_Insert-EditLink_Website.gif
 
-.. image:: Images/image079.png
-  :width: 800
+#. 若是想以新視窗開啟連結，使用 **目標** 欄位的下拉式選單，選擇於 **新視窗開啟
+連結** 。系統預設是不開啟新視窗。
 
-您課程的註冊頁會打開。
+#. 點下 **輸入** 。
 
-b. 從頁面上方瀏覽器的網址列複製 URL
-
-c. 複製在主要網址之後，“about”之前的 URL (包含最後面的 "/")，如下所舉例： ::
-
-	/courses/[organization]/[course_number]/[course_name]/
-
-以 edX101: How to Create an edX Course from edX, 其完整的 URL 如下。 ::
-
-	https://edge.edx.org/courses/edX/edX101/How_to_create_an_edX_course/about
-
-其相對目錄如下。 ::
-
-	/courses/edX/edX101/How_to_create_an_edX_course/
-
-2. 確定目標單元的位置 ID。 當您創建單元時，Studio 會為每個單元產生位置 ID。 
-位置 ID 使用以下的句法。::
-
-	 i4x://<organization>/<course_number>/vertical/<url_name_of_unit>
-
-.. note::
-
-  要找到位置 ID，在 Studio 中開啟欲連結單元頁面，接著注意瀏覽器中的網址列中的 URL。 
-  位置 ID 為結束編輯後的URL，請見以下範例。
-
-.. image:: Images/image081.png  
+#. 儲存並測試連結。
 
 
-3. 打開您要連結的單元。
+.. _Add a Link to a Course Unit:
 
-4. 在新增組件下方，點擊 HTML，接著點擊空白。畫面上將出現一個新的空白組件。
+============================
+連線至課程單元
+============================
 
-.. image:: Images/image083.png
-  :width: 800
+連線至課程單元的步驟，說明如下：
 
-5. 點擊 **編輯** 。
+#. 必須先取得該課程單元的識別號碼。請至 Studio 開啟單元，找到畫面右下角
+的 **單元位置**，複製 **單元識別碼** 欄位的單元識別號碼。
+   
+   .. image:: Images/UnitIdentifier.gif
 
-6. 在開啟的 HTML 編輯器中，點擊 HTML 分頁.
+#. 開啟要增加連結的 HTML 組件編輯器
 
-7. 接著到 number 1 輸入下列原始碼，用您於前述步驟中取得資訊取代課程相對目錄位置，單元的位置 ID 以及連結文字。::
+#. 選擇要成為連結的文字。
 
-  <a href = "[[relative course directory]]/jump_to/[[location id of <unit]]">[link text]</a>
+#. 點下工具列的連結圖示。
 
-例如， 一個連結到 edx101 的 “Creating an HTML Component” 的單元類似於以下 ::
+#.  **輸入／編輯連結** 的對話框會被開啟，在 **連線網址** 欄位，輸入
 
-  <a href = "courses/edX/edX101/How_to_Create_an_edX_Course/jump_to/i4x://edX/ed
-  <X101/vertical/8713e94afd074e40991dcb675d1030b5">Creating an HTML
-  <Component</a>
- 
+   ``/jump_to_id/<unit identifier>``
 
-.. raw:: latex
-  
-  \newpage %
+  貼上單元識別號碼取代<unit identifier>，並且確認有加上斜線  (/)  。請見下
+圖。
 
-從 LaTeX 匯入
-************
+   .. image:: Images/HTML_Insert-EditLink_CourseUnit.gif
 
-您可以由匯入 LaTeX 原始碼來創建一個 HTML 組件。
+#. 若是想以新視窗開啟連結，使用 **目標** 欄位的下拉式選單，選擇於 **新視窗開啟
+連結** 。系統預設是不開啟新視窗。
 
-.. note::
+#. 點下 **輸入** 。
 
-  此功能還在開發當中。
+#. 儲存並測試連線。
 
-1. 在 **新增單元** 下方，點擊 **HTML** ，接著點擊 **E-text Written in LaTeX.** 
+.. _Add a Link to a File:
 
+============================
+連線至特定檔案
+============================
+
+You can add a link in an HTML component to any file you've uploaded for the course. For more information about uploading files, see :ref:`Add Files to a Course`.
+
+#. 進入 **檔案與上傳** 頁面，複製檔案的網址。
+
+   .. image:: Images/HTML_Link_File.gif
+
+#. 選擇要成為連結的文字。
+
+#. 點下工具列的連結圖示。
+
+#.  **輸入／編輯** 連結的對話框會被開啟，在 **連線網址** 欄位，輸入
+
+   ``/static/FileName.type``
+
+   貼上檔案網址取代< FileName.type >，
+確認有加上斜線  (/)  ，請見下圖。
+
+   .. image:: Images/HTML_Insert-EditLink_File.gif
+
+#. 若是想以新視窗開啟連結，使用 **目標** 欄位的下拉式選單，選擇於 **新視窗開啟
+連結** 。系統預設是不開啟新視窗。
+
+<<<<<<< HEAD
+#. 點下 **輸入** 。
+=======
 .. image:: Images/C07_01.png
   :width: 800
+>>>>>>> 529851508041f3ac8bbe1c63416923240662ea04
 
-2. 在出現的組件中點擊編輯。
+#. 儲存並測試連線。
 
-.. image:: Images/image083.png
-  :width: 800
 
-3. 組件編輯器會開啟。在編輯器的左上角，點擊黃色的 **Edit High Level Source** 文字。
+.. _Add an Image to an HTML Component:
 
-.. image:: Images/image085.png
-  :width: 800
+***********************************
+在 HTML 組件新增圖片
+***********************************
 
-4. 在開啟的 **High Level Source Editing** 畫面中，以您的 LaTeX 原始碼取代範例程式碼。
+You can add any image that you have uploaded for the course to an HTML component. For more information about uploading images, see :ref:`Add Files to a Course`.
 
-.. image:: Images/image087.png
-  :width: 800
+.. note:: Review :ref:`Best Practices for Describing Images` when you add images to HTML components.
 
-5. 點擊 **Save and compile to edX XML** 以轉換 LaTeX 原始碼到 edX XML 程式碼。
+To add an image, you'll need the URL of the image that you uploaded to the course. You'll then create a link to the image in the HTML component.
 
-.. note::
+#. 進入 **檔案與上傳** 頁面，複製圖片的網址。
 
-  Studio 使用第三方 LaTeX 處理器來轉換 LaTeX 程式碼到 XML，LaTeX 處理器必須是在啟動中的狀態才能使用。
+#. 進入 HTML 組件，切換至 HTML 模式。
 
-6. 點擊 **儲存** ，檢查您新建的組件是否看起來跟您預想的一樣。
+#. 找到要放置圖片的位置，依照下圖的語法，輸入圖片語法標籤。
+
+   ``<p><img src="[URL of file]" alt="[description]"/></p>``
+
+   例如：圖片語法標籤應該會與下圖範例類似，差別僅在於圖片網址與描述說
+明。
+
+   ``<p><img src="/static/GreatLakes.gif" alt="Map of the Great Lakes" /></p>``
+
+#. 切換到視覺模式檢查圖片。
+
+.. _Import LaTeX Code:
+
+****************************************
+匯入 LaTeX 程式碼至 HTML 組件
+****************************************
+
+匯入 LaTeX 程式碼後，可以新增與顯示數學公式，請見下圖。
+
+.. image:: Images/HTML_LaTeX_LMS.gif
+
+.. warning:: LaTeX 處理器是 Studio 作為轉換 LaTeX 程式碼為 XML 之用，屬於第三方工具，
+使用時請留意。若要使用此處理器，請與 PM（專案管理人員）共同操作。
+
+系統不會預設開啟此功能，請至課程的進階設定，修改設定。
+
+在 HTML 組件包含 LaTeX 程式碼，請依照下列步驟：
+
+#. 開啟課程的規則序號。
+
+   #. 進入 Studio 的 **設定** ，點下 **進階設定** 。
+   #. 進入 **進階設定** 頁面，下拉畫面至 **使用 LaTeX 程式編輯** 的規則序號。
+   #. 找到 **使用 LaTeX 程式編輯** 的規則序號旁邊的規則屬性欄位，將 **否** 換成 **是** 。
+   #. 點下 **儲存改變** 。
+
+#. 進入要新增組件的單元，點下在 **新增組件** 的 **html** ，再點下 **用 LaTeX 寫電子文本** ，產生新的組件。
+
+#. 點下新組件右上方的 **上傳** 。
+
+   .. image:: Images/HTML_LaTeX.gif
+
+#. 選擇要上傳的檔案，然後點下 **開啟** ，檔案會被上傳至 LaTeX 編輯器。
+
+   The file loads in the LaTeX editor.
+
+   .. image:: Images/HTML_LaTeXEditor.gif
+
+#. 若想要修改檔案。
+
+#. 進入 LaTeX 編輯器，找到畫面左下的 **使用儲存與編輯成 edX XML** ，點下此
+功能。
+
+  組件編輯器將被關閉，同時開啟單元頁面，便可觀看用 LaTeX 編輯的內容。
+
+   .. image:: Images/HTML_LaTeX_CompEditor.gif
+
+#. 同樣在單元頁面，點下 **預覽** ，檢查檔案在學習管理平台顯示的樣式。
+
+   * 若發現有誤，回到單元頁面，點下 **編輯** ，再度開啟組件。找到組件編輯器的左下方，點下 **開啟 Latex 來源編輯器** ，重新編輯 LaTeX 程式碼。
+
